@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.section-inner li{
+    margin-left: -40px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.guim.co.uk/img/media/699cce4914b90ae0ba89787178bc48314d50eb89/0_215_5081_3048/master/5081.jpg?width=460&quality=85&auto=format&fit=max&s=7489f5b0d0426a70d892fe3b6bbd8211');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.chesscomfiles.com/uploads/v1/article/25422.4d14257f.5000x5000o.a1255f82e94e.png');
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.chesscomfiles.com/uploads/v1/article/26422.71fd393e.668x375o.9eeb3eec9a6c@2x.png');
+}
+
+#howToCheat {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images.chesscomfiles.com/uploads/v1/article/28965.65516e2d.5000x5000o.252055c6fb93.png');
+}
+
+#appInfo {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.blgba.com.au/hubfs/Blogs%20Images/How%20to%20Build%20a%20Winning%20Team%20%28Peter%29%20250321%20resized%201440%20-%20AdobeStock_371004198.jpg');
+}
+
+#downloadTable {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://townsquare.media/site/33/files/2019/05/Win-Cash-FEAT-1.jpg?w=980&q=75');
+}
+
+.gold, .finduslink {
+    color: goldenrod;
+}
+
+.mailuslink{
+    color: rebeccapurple;
+}
+
+
+/* ==========BUTTON===========*/
+
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: gold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+.button:hover{
+    background: gold;
+    color: #050801;
+    box-shadow: 0 0 5px gold,
+                0 0 25px gold,
+                0 0 50px gold,
+                0 0 200px gold;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.button:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.button:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.button span{
+    position: absolute;
+    display: block;
+}
+.button span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,gold);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,gold);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.button span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,gold);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,gold);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+/* ===============Collum=============== */
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 0rem 0rem 0rem;
+  max-width: 1100px;
+}
+
+.table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style-type: none;
+  outline: 1px solid #ddd;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+.table-cell:first-child {
+  outline: 1px solid #fff;
+  background: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .table-cell:first-child {
+    display: none;
+  }
+}
+.table-cell:nth-child(3) {
+  outline: 1px solid #30305b;
+}
+.table-cell:nth-child(-n+3) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.table-cell > h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+.table-cell.cell-feature {
+  text-align: left;
+  font-size: 18px;
+}
+.table-cell.plattform {
+  color: limegreen;
+}
+.table-cell.plattform a.btn {
+  color: limegreen;
+}
+.table-cell.plattform a.btn:hover {
+  background-color: limegreen;
+  border-color: limegreen;
+  color: white;
+}
+.table-cell.enterprise {
+  background-color: #30305b;
+  color: #85bafc;
+}
+.table-cell.enterprise a.btn {
+  color: #85bafc;
+}
+.table-cell.enterprise a.btn:hover {
+  background-color: #85bafc;
+  border-color: #85bafc;
+  color: #30305b;
+}
+
+/* =============================Table columns================================== */
+.table-cell {
+  width: calc(33.33% - 1px);
+}
+@media only screen and (max-width: 768px) {
+  .table-cell.cell-feature {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+svg.enterprise-check path {
+  fill: #30305b !important;
+}
+
+a.btn {
+  border: 2px solid;
+  padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  border-radius: 0.3rem;
+}/*# sourceMappingURL=GM.css.map */
